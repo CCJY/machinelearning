@@ -17,7 +17,7 @@ namespace Microsoft.ML.PerformanceTests
     {
         protected static readonly IReadOnlyList<MsBuildArgument> msbuildArguments = new List<MsBuildArgument>() {
             new MsBuildArgument($"/p:Configuration={GetBuildConfigurationName()}"),
-            new MsBuildArgument($"--buildTimeout 600"),
+            new MsBuildArgument($"/p:buildTimeout=600"),
             new MsBuildArgument($"--no-dependencies")
         };
 
