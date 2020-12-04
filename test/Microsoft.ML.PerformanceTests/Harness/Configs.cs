@@ -17,6 +17,7 @@ namespace Microsoft.ML.PerformanceTests
     {
         protected static readonly IReadOnlyList<MsBuildArgument> msbuildArguments = new List<MsBuildArgument>() {
             new MsBuildArgument($"/p:Configuration={GetBuildConfigurationName()}"),
+            //new MsBuildArgument(@"--packages C:\code\machinelearning\packages"),
             new MsBuildArgument($"--no-dependencies")
         };
 
