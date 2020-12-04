@@ -32,7 +32,7 @@
     <NativeAssemblyReference Include="MklImports" />
     <NativeAssemblyReference Condition="'$(OS)' == 'Windows_NT'" Include="libiomp5md" />
   </ItemGroup>
-  <ItemGroup>
+  <!-- <ItemGroup>
     <MetaFile Update="@(MetaFile)">
       <Url>https://aka.ms/mlnet-resources/meta/%(Identity)</Url>
       <DestinationFile>$([System.IO.Path]::GetTempPath())/MLNET/</DestinationFile>
@@ -47,5 +47,5 @@
             Retries="5"
             SkipUnchangedFiles="true">
     </DownloadFile>
-  </Target>
+  </Target> -->
 </Project>
